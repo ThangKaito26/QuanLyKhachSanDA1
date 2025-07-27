@@ -17,6 +17,7 @@ namespace HTQLKS
         private QLKSDataSetTableAdapters.DATPHONGTableAdapter datPhongAdapter;
         private QLKSDataSetTableAdapters.KHACHHANGTableAdapter khachHangAdapter;
         private QLKSDataSetTableAdapters.PHONGTableAdapter phongAdapter;
+        private QLKSDataSetTableAdapters.LOAIPHONGTableAdapter loaiPhongAdapter;
         private BindingSource bindingSource = new BindingSource();
         // Xóa biến không dùng nữa
         // private string currentMaDatPhong = null;
@@ -37,6 +38,7 @@ namespace HTQLKS
             dtpCheckOut.Format = DateTimePickerFormat.Custom;
             dtpCheckOut.CustomFormat = "dd/MM/yyyy";
             dtpCheckOut.Value = DateTime.Now;
+            Filters_Changed(null, null); // Gọi hàm lọc khi load xong
         }
 
         private void InitializeDataAccess()
@@ -48,6 +50,7 @@ namespace HTQLKS
             datPhongAdapter = new QLKSDataSetTableAdapters.DATPHONGTableAdapter() { Connection = connection };
             khachHangAdapter = new QLKSDataSetTableAdapters.KHACHHANGTableAdapter() { Connection = connection };
             phongAdapter = new QLKSDataSetTableAdapters.PHONGTableAdapter() { Connection = connection };
+            loaiPhongAdapter = new QLKSDataSetTableAdapters.LOAIPHONGTableAdapter() { Connection = connection };
         }
 
         private void LoadData()
@@ -57,6 +60,7 @@ namespace HTQLKS
                 datPhongAdapter.Fill(qlksDataSet.DATPHONG);
                 khachHangAdapter.Fill(qlksDataSet.KHACHHANG);
                 phongAdapter.Fill(qlksDataSet.PHONG);
+                loaiPhongAdapter.Fill(qlksDataSet.LOAIPHONG);
                 DisplayCheckOutData();
             }
             catch (Exception ex)
@@ -71,12 +75,14 @@ namespace HTQLKS
             var checkOutData = from dp in qlksDataSet.DATPHONG
                                join kh in qlksDataSet.KHACHHANG on dp.MaKH equals kh.MaKH
                                join p in qlksDataSet.PHONG on dp.MaPhong equals p.MaPhong
+                               join lp in qlksDataSet.LOAIPHONG on p.MaLoaiPhong equals lp.MaLoaiPhong
                                where dp.TrangThai == "Đã check-in"
                                select new
                                {
                                    MaDatPhong = dp.MaDatPhong,
                                    TenKhachHang = kh.HoTen,
                                    SoPhong = p.SoPhong,
+                                   LoaiPhong = lp.TenLoaiPhong,
                                    NgayCheckIn = dp.NgayCheckIn,
                                    NgayCheckOut = dp.NgayCheckOut
                                };
@@ -89,6 +95,7 @@ namespace HTQLKS
             dgvCheckOut.Columns["MaDatPhong"].HeaderText = "Mã đặt phòng";
             dgvCheckOut.Columns["TenKhachHang"].HeaderText = "Tên khách hàng";
             dgvCheckOut.Columns["SoPhong"].HeaderText = "Số phòng";
+            dgvCheckOut.Columns["LoaiPhong"].HeaderText = "Loại phòng";
             dgvCheckOut.Columns["NgayCheckIn"].HeaderText = "Ngày check-in";
             dgvCheckOut.Columns["NgayCheckOut"].HeaderText = "Ngày check-out";
 
@@ -106,16 +113,67 @@ namespace HTQLKS
 
         private void LoadComboBoxData()
         {
-            // Không còn sử dụng ComboBox mã đặt phòng, hàm này có thể bỏ trống hoặc xóa.
+            // Lọc loại phòng (join sang LOAIPHONG để lấy tên)
+            var roomTypesFilter = qlksDataSet.LOAIPHONG
+                .Select(lp => lp.TenLoaiPhong)
+                .Distinct()
+                .ToList();
+            roomTypesFilter.Insert(0, "Tất cả loại phòng");
+            cmbFilterLoaiPhong.DataSource = roomTypesFilter;
+            cmbFilterLoaiPhong.SelectedIndex = 0;
+
+            // Lọc số phòng
+            var roomNumbersFilter = qlksDataSet.PHONG
+                .Select(p => p.SoPhong)
+                .Distinct()
+                .ToList();
+            roomNumbersFilter.Insert(0, "Tất cả số phòng");
+            cmbFilterSoPhong.DataSource = roomNumbersFilter;
+            cmbFilterSoPhong.SelectedIndex = 0;
         }
 
         private void SetupEventHandlers()
         {
             dgvCheckOut.CellContentClick += DgvCheckOut_CellContentClick;
-            // Xóa mọi event handler, logic liên quan đến cmbMaDatPhong
-            // Không còn sử dụng ComboBox mã đặt phòng
             btnXacNhan.Click += BtnXacNhan_Click;
             btnHuy.Click += BtnHuy_Click;
+            cmbFilterLoaiPhong.SelectedIndexChanged += Filters_Changed;
+            cmbFilterSoPhong.SelectedIndexChanged += Filters_Changed;
+        }
+
+        private void Filters_Changed(object sender, EventArgs e)
+        {
+            var query = from dp in qlksDataSet.DATPHONG
+                        join kh in qlksDataSet.KHACHHANG on dp.MaKH equals kh.MaKH
+                        join p in qlksDataSet.PHONG on dp.MaPhong equals p.MaPhong
+                        join lp in qlksDataSet.LOAIPHONG on p.MaLoaiPhong equals lp.MaLoaiPhong
+                        where dp.TrangThai == "Đã check-in"
+                        select new
+                        {
+                            MaDatPhong = dp.MaDatPhong,
+                            TenKhachHang = kh.HoTen,
+                            SoPhong = p.SoPhong,
+                            LoaiPhong = lp.TenLoaiPhong,
+                            NgayCheckIn = dp.NgayCheckIn,
+                            NgayCheckOut = dp.NgayCheckOut
+                        };
+
+            // Lọc loại phòng
+            if (cmbFilterLoaiPhong.SelectedIndex > 0)
+            {
+                string selectedType = cmbFilterLoaiPhong.SelectedItem.ToString();
+                query = query.Where(r => r.LoaiPhong == selectedType);
+            }
+
+            // Lọc số phòng
+            if (cmbFilterSoPhong.SelectedIndex > 0)
+            {
+                string selectedRoom = cmbFilterSoPhong.SelectedItem.ToString();
+                query = query.Where(r => r.SoPhong == selectedRoom);
+            }
+
+            bindingSource.DataSource = query.ToList();
+            dgvCheckOut.DataSource = bindingSource;
         }
 
         private void DgvCheckOut_CellContentClick(object sender, DataGridViewCellEventArgs e)

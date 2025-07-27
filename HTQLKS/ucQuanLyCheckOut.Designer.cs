@@ -10,7 +10,6 @@ namespace HTQLKS
         private System.Windows.Forms.Panel pnlFilters;
         private System.Windows.Forms.TableLayoutPanel tblFilters;
         private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.TextBox txtFilterTenKhach;
         private System.Windows.Forms.ComboBox cmbFilterLoaiPhong;
         private System.Windows.Forms.ComboBox cmbFilterSoPhong;
         private System.Windows.Forms.DateTimePicker dtpFilterNgayCheckOut;
@@ -60,7 +59,6 @@ namespace HTQLKS
             this.pnlFilters = new System.Windows.Forms.Panel();
             this.tblFilters = new System.Windows.Forms.TableLayoutPanel();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.txtFilterTenKhach = new System.Windows.Forms.TextBox();
             this.cmbFilterLoaiPhong = new System.Windows.Forms.ComboBox();
             this.cmbFilterSoPhong = new System.Windows.Forms.ComboBox();
             this.dtpFilterNgayCheckOut = new System.Windows.Forms.DateTimePicker();
@@ -328,17 +326,15 @@ namespace HTQLKS
             // 
             // tblFilters
             // 
-            this.tblFilters.ColumnCount = 5;
+            this.tblFilters.ColumnCount = 4;
             this.tblFilters.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tblFilters.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tblFilters.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tblFilters.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tblFilters.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblFilters.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tblFilters.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tblFilters.Controls.Add(this.txtSearch, 0, 0);
-            this.tblFilters.Controls.Add(this.txtFilterTenKhach, 1, 0);
-            this.tblFilters.Controls.Add(this.cmbFilterLoaiPhong, 2, 0);
-            this.tblFilters.Controls.Add(this.cmbFilterSoPhong, 3, 0);
-            this.tblFilters.Controls.Add(this.dtpFilterNgayCheckOut, 4, 0);
+            this.tblFilters.Controls.Add(this.cmbFilterLoaiPhong, 1, 0);
+            this.tblFilters.Controls.Add(this.cmbFilterSoPhong, 2, 0);
+            this.tblFilters.Controls.Add(this.dtpFilterNgayCheckOut, 3, 0);
             this.tblFilters.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblFilters.Location = new System.Drawing.Point(13, 12);
             this.tblFilters.Name = "tblFilters";
@@ -359,18 +355,6 @@ namespace HTQLKS
             this.txtSearch.Size = new System.Drawing.Size(311, 26);
             this.txtSearch.TabIndex = 0;
             // 
-            // txtFilterTenKhach
-            // 
-            this.txtFilterTenKhach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFilterTenKhach.BackColor = System.Drawing.Color.FromArgb(71, 85, 105);
-            this.txtFilterTenKhach.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtFilterTenKhach.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtFilterTenKhach.ForeColor = System.Drawing.Color.White;
-            this.txtFilterTenKhach.Location = new System.Drawing.Point(320, 15);
-            this.txtFilterTenKhach.Name = "txtFilterTenKhach";
-            this.txtFilterTenKhach.Size = new System.Drawing.Size(311, 26);
-            this.txtFilterTenKhach.TabIndex = 1;
-            // 
             // cmbFilterLoaiPhong
             // 
             this.cmbFilterLoaiPhong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -379,10 +363,10 @@ namespace HTQLKS
             this.cmbFilterLoaiPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.cmbFilterLoaiPhong.ForeColor = System.Drawing.Color.White;
             this.cmbFilterLoaiPhong.FormattingEnabled = true;
-            this.cmbFilterLoaiPhong.Location = new System.Drawing.Point(637, 14);
+            this.cmbFilterLoaiPhong.Location = new System.Drawing.Point(320, 15);
             this.cmbFilterLoaiPhong.Name = "cmbFilterLoaiPhong";
             this.cmbFilterLoaiPhong.Size = new System.Drawing.Size(184, 28);
-            this.cmbFilterLoaiPhong.TabIndex = 2;
+            this.cmbFilterLoaiPhong.TabIndex = 1;
             // 
             // cmbFilterSoPhong
             // 
@@ -392,19 +376,19 @@ namespace HTQLKS
             this.cmbFilterSoPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.cmbFilterSoPhong.ForeColor = System.Drawing.Color.White;
             this.cmbFilterSoPhong.FormattingEnabled = true;
-            this.cmbFilterSoPhong.Location = new System.Drawing.Point(827, 14);
+            this.cmbFilterSoPhong.Location = new System.Drawing.Point(510, 15);
             this.cmbFilterSoPhong.Name = "cmbFilterSoPhong";
             this.cmbFilterSoPhong.Size = new System.Drawing.Size(184, 28);
-            this.cmbFilterSoPhong.TabIndex = 3;
+            this.cmbFilterSoPhong.TabIndex = 2;
             // 
             // dtpFilterNgayCheckOut
             // 
             this.dtpFilterNgayCheckOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpFilterNgayCheckOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.dtpFilterNgayCheckOut.Location = new System.Drawing.Point(1017, 15);
+            this.dtpFilterNgayCheckOut.Location = new System.Drawing.Point(700, 15);
             this.dtpFilterNgayCheckOut.Name = "dtpFilterNgayCheckOut";
             this.dtpFilterNgayCheckOut.Size = new System.Drawing.Size(252, 26);
-            this.dtpFilterNgayCheckOut.TabIndex = 4;
+            this.dtpFilterNgayCheckOut.TabIndex = 3;
             // 
             // pnlHeader
             // 

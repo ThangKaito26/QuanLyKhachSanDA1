@@ -39,6 +39,7 @@ namespace HTQLKS
             this.lblMaDatPhong = new System.Windows.Forms.Label();
             this.txtMaDatPhong = new System.Windows.Forms.TextBox();
             this.lblTenKhach = new System.Windows.Forms.Label();
+            this.txtTenKhach = new System.Windows.Forms.TextBox();
             this.cmbTenKhach = new System.Windows.Forms.ComboBox();
             this.lblCCCD = new System.Windows.Forms.Label();
             this.txtCCCD = new System.Windows.Forms.TextBox();
@@ -56,7 +57,6 @@ namespace HTQLKS
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.cmbFilterSoPhong = new System.Windows.Forms.ComboBox();
             this.cmbFilterLoaiPhong = new System.Windows.Forms.ComboBox();
-            this.txtFilterTenKhach = new System.Windows.Forms.TextBox();
             this.dtpFilterNgayDen = new System.Windows.Forms.DateTimePicker();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.btnAddNew = new System.Windows.Forms.Button();
@@ -80,7 +80,7 @@ namespace HTQLKS
             this.pnlMain.Controls.Add(this.pnlHeader);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(0, 0);
-            this.pnlMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlMain.Margin = new System.Windows.Forms.Padding(4);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
             this.pnlMain.Size = new System.Drawing.Size(1352, 897);
@@ -117,7 +117,7 @@ namespace HTQLKS
             this.dgvCheckIn.EnableHeadersVisualStyles = false;
             this.dgvCheckIn.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
             this.dgvCheckIn.Location = new System.Drawing.Point(27, 167);
-            this.dgvCheckIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvCheckIn.Margin = new System.Windows.Forms.Padding(4);
             this.dgvCheckIn.Name = "dgvCheckIn";
             this.dgvCheckIn.ReadOnly = true;
             this.dgvCheckIn.RowHeadersVisible = false;
@@ -136,7 +136,7 @@ namespace HTQLKS
             this.pnlDetails.Controls.Add(this.lblDetailsTitle);
             this.pnlDetails.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlDetails.Location = new System.Drawing.Point(27, 553);
-            this.pnlDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlDetails.Margin = new System.Windows.Forms.Padding(4);
             this.pnlDetails.Name = "pnlDetails";
             this.pnlDetails.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
             this.pnlDetails.Size = new System.Drawing.Size(1298, 319);
@@ -151,7 +151,7 @@ namespace HTQLKS
             this.btnConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirm.ForeColor = System.Drawing.Color.White;
             this.btnConfirm.Location = new System.Drawing.Point(1063, 255);
-            this.btnConfirm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnConfirm.Margin = new System.Windows.Forms.Padding(4);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(200, 43);
             this.btnConfirm.TabIndex = 3;
@@ -167,7 +167,7 @@ namespace HTQLKS
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.Location = new System.Drawing.Point(908, 255);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(147, 43);
             this.btnCancel.TabIndex = 2;
@@ -187,6 +187,7 @@ namespace HTQLKS
             this.pnlInputFields.Controls.Add(this.lblMaDatPhong, 0, 0);
             this.pnlInputFields.Controls.Add(this.txtMaDatPhong, 1, 0);
             this.pnlInputFields.Controls.Add(this.lblTenKhach, 2, 0);
+            this.pnlInputFields.Controls.Add(this.txtTenKhach, 3, 0);
             this.pnlInputFields.Controls.Add(this.cmbTenKhach, 3, 0);
             this.pnlInputFields.Controls.Add(this.lblCCCD, 0, 1);
             this.pnlInputFields.Controls.Add(this.txtCCCD, 1, 1);
@@ -199,7 +200,7 @@ namespace HTQLKS
             this.pnlInputFields.Controls.Add(this.lblSoPhong, 0, 3);
             this.pnlInputFields.Controls.Add(this.cmbSoPhong, 1, 3);
             this.pnlInputFields.Location = new System.Drawing.Point(27, 62);
-            this.pnlInputFields.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlInputFields.Margin = new System.Windows.Forms.Padding(4);
             this.pnlInputFields.Name = "pnlInputFields";
             this.pnlInputFields.RowCount = 4;
             this.pnlInputFields.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -231,7 +232,7 @@ namespace HTQLKS
             this.txtMaDatPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtMaDatPhong.ForeColor = System.Drawing.Color.White;
             this.txtMaDatPhong.Location = new System.Drawing.Point(164, 10);
-            this.txtMaDatPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaDatPhong.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaDatPhong.Name = "txtMaDatPhong";
             this.txtMaDatPhong.ReadOnly = true;
             this.txtMaDatPhong.Size = new System.Drawing.Size(454, 26);
@@ -251,19 +252,26 @@ namespace HTQLKS
             this.lblTenKhach.Text = "Tên khách hàng";
             this.lblTenKhach.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // txtTenKhach
+            // 
+            this.txtTenKhach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTenKhach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.txtTenKhach.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTenKhach.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.txtTenKhach.ForeColor = System.Drawing.Color.White;
+            this.txtTenKhach.Location = new System.Drawing.Point(4, 56);
+            this.txtTenKhach.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenKhach.Name = "txtTenKhach";
+            this.txtTenKhach.Size = new System.Drawing.Size(152, 26);
+            this.txtTenKhach.TabIndex = 3;
+            // 
             // cmbTenKhach
             // 
-            this.cmbTenKhach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbTenKhach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.cmbTenKhach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbTenKhach.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.cmbTenKhach.ForeColor = System.Drawing.Color.White;
-            this.cmbTenKhach.FormattingEnabled = true;
-            this.cmbTenKhach.Location = new System.Drawing.Point(786, 9);
-            this.cmbTenKhach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbTenKhach.Location = new System.Drawing.Point(785, 3);
             this.cmbTenKhach.Name = "cmbTenKhach";
-            this.cmbTenKhach.Size = new System.Drawing.Size(454, 28);
-            this.cmbTenKhach.TabIndex = 3;
+            this.cmbTenKhach.Size = new System.Drawing.Size(121, 24);
+            this.cmbTenKhach.TabIndex = 4;
+            this.cmbTenKhach.Visible = false;
             // 
             // lblCCCD
             // 
@@ -271,10 +279,10 @@ namespace HTQLKS
             this.lblCCCD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCCCD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.lblCCCD.ForeColor = System.Drawing.Color.White;
-            this.lblCCCD.Location = new System.Drawing.Point(4, 46);
+            this.lblCCCD.Location = new System.Drawing.Point(164, 46);
             this.lblCCCD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCCCD.Name = "lblCCCD";
-            this.lblCCCD.Size = new System.Drawing.Size(152, 46);
+            this.lblCCCD.Size = new System.Drawing.Size(454, 46);
             this.lblCCCD.TabIndex = 4;
             this.lblCCCD.Text = "CCCD";
             this.lblCCCD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -286,10 +294,10 @@ namespace HTQLKS
             this.txtCCCD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCCCD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtCCCD.ForeColor = System.Drawing.Color.White;
-            this.txtCCCD.Location = new System.Drawing.Point(164, 56);
-            this.txtCCCD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCCCD.Location = new System.Drawing.Point(626, 56);
+            this.txtCCCD.Margin = new System.Windows.Forms.Padding(4);
             this.txtCCCD.Name = "txtCCCD";
-            this.txtCCCD.Size = new System.Drawing.Size(454, 26);
+            this.txtCCCD.Size = new System.Drawing.Size(152, 26);
             this.txtCCCD.TabIndex = 5;
             // 
             // lblSDT
@@ -298,10 +306,10 @@ namespace HTQLKS
             this.lblSDT.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.lblSDT.ForeColor = System.Drawing.Color.White;
-            this.lblSDT.Location = new System.Drawing.Point(626, 46);
+            this.lblSDT.Location = new System.Drawing.Point(786, 46);
             this.lblSDT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSDT.Name = "lblSDT";
-            this.lblSDT.Size = new System.Drawing.Size(152, 46);
+            this.lblSDT.Size = new System.Drawing.Size(454, 46);
             this.lblSDT.TabIndex = 6;
             this.lblSDT.Text = "Số điện thoại";
             this.lblSDT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -313,10 +321,10 @@ namespace HTQLKS
             this.txtSDT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtSDT.ForeColor = System.Drawing.Color.White;
-            this.txtSDT.Location = new System.Drawing.Point(786, 56);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSDT.Location = new System.Drawing.Point(4, 102);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(4);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(454, 26);
+            this.txtSDT.Size = new System.Drawing.Size(152, 26);
             this.txtSDT.TabIndex = 7;
             // 
             // lblNgayCheckIn
@@ -325,10 +333,10 @@ namespace HTQLKS
             this.lblNgayCheckIn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblNgayCheckIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.lblNgayCheckIn.ForeColor = System.Drawing.Color.White;
-            this.lblNgayCheckIn.Location = new System.Drawing.Point(4, 92);
+            this.lblNgayCheckIn.Location = new System.Drawing.Point(164, 92);
             this.lblNgayCheckIn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNgayCheckIn.Name = "lblNgayCheckIn";
-            this.lblNgayCheckIn.Size = new System.Drawing.Size(152, 46);
+            this.lblNgayCheckIn.Size = new System.Drawing.Size(454, 46);
             this.lblNgayCheckIn.TabIndex = 8;
             this.lblNgayCheckIn.Text = "Ngày check-in";
             this.lblNgayCheckIn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -337,10 +345,10 @@ namespace HTQLKS
             // 
             this.dtpNgayCheckIn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpNgayCheckIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.dtpNgayCheckIn.Location = new System.Drawing.Point(164, 102);
-            this.dtpNgayCheckIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpNgayCheckIn.Location = new System.Drawing.Point(626, 102);
+            this.dtpNgayCheckIn.Margin = new System.Windows.Forms.Padding(4);
             this.dtpNgayCheckIn.Name = "dtpNgayCheckIn";
-            this.dtpNgayCheckIn.Size = new System.Drawing.Size(454, 26);
+            this.dtpNgayCheckIn.Size = new System.Drawing.Size(152, 26);
             this.dtpNgayCheckIn.TabIndex = 9;
             // 
             // lblLoaiPhong
@@ -349,10 +357,10 @@ namespace HTQLKS
             this.lblLoaiPhong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblLoaiPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.lblLoaiPhong.ForeColor = System.Drawing.Color.White;
-            this.lblLoaiPhong.Location = new System.Drawing.Point(626, 92);
+            this.lblLoaiPhong.Location = new System.Drawing.Point(786, 92);
             this.lblLoaiPhong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLoaiPhong.Name = "lblLoaiPhong";
-            this.lblLoaiPhong.Size = new System.Drawing.Size(152, 46);
+            this.lblLoaiPhong.Size = new System.Drawing.Size(454, 46);
             this.lblLoaiPhong.TabIndex = 10;
             this.lblLoaiPhong.Text = "Loại phòng";
             this.lblLoaiPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -365,10 +373,10 @@ namespace HTQLKS
             this.cmbLoaiPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.cmbLoaiPhong.ForeColor = System.Drawing.Color.White;
             this.cmbLoaiPhong.FormattingEnabled = true;
-            this.cmbLoaiPhong.Location = new System.Drawing.Point(786, 101);
-            this.cmbLoaiPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbLoaiPhong.Location = new System.Drawing.Point(4, 147);
+            this.cmbLoaiPhong.Margin = new System.Windows.Forms.Padding(4);
             this.cmbLoaiPhong.Name = "cmbLoaiPhong";
-            this.cmbLoaiPhong.Size = new System.Drawing.Size(454, 28);
+            this.cmbLoaiPhong.Size = new System.Drawing.Size(152, 28);
             this.cmbLoaiPhong.TabIndex = 11;
             // 
             // lblSoPhong
@@ -377,10 +385,10 @@ namespace HTQLKS
             this.lblSoPhong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblSoPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.lblSoPhong.ForeColor = System.Drawing.Color.White;
-            this.lblSoPhong.Location = new System.Drawing.Point(4, 138);
+            this.lblSoPhong.Location = new System.Drawing.Point(164, 138);
             this.lblSoPhong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSoPhong.Name = "lblSoPhong";
-            this.lblSoPhong.Size = new System.Drawing.Size(152, 47);
+            this.lblSoPhong.Size = new System.Drawing.Size(454, 47);
             this.lblSoPhong.TabIndex = 12;
             this.lblSoPhong.Text = "Số phòng";
             this.lblSoPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -393,10 +401,10 @@ namespace HTQLKS
             this.cmbSoPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.cmbSoPhong.ForeColor = System.Drawing.Color.White;
             this.cmbSoPhong.FormattingEnabled = true;
-            this.cmbSoPhong.Location = new System.Drawing.Point(164, 147);
-            this.cmbSoPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbSoPhong.Location = new System.Drawing.Point(626, 147);
+            this.cmbSoPhong.Margin = new System.Windows.Forms.Padding(4);
             this.cmbSoPhong.Name = "cmbSoPhong";
-            this.cmbSoPhong.Size = new System.Drawing.Size(454, 28);
+            this.cmbSoPhong.Size = new System.Drawing.Size(152, 28);
             this.cmbSoPhong.TabIndex = 13;
             // 
             // lblDetailsTitle
@@ -417,7 +425,7 @@ namespace HTQLKS
             this.pnlFilters.Controls.Add(this.tableLayoutPanel1);
             this.pnlFilters.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlFilters.Location = new System.Drawing.Point(27, 87);
-            this.pnlFilters.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlFilters.Margin = new System.Windows.Forms.Padding(4);
             this.pnlFilters.Name = "pnlFilters";
             this.pnlFilters.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
             this.pnlFilters.Size = new System.Drawing.Size(1298, 80);
@@ -425,20 +433,18 @@ namespace HTQLKS
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnCount = 4;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Controls.Add(this.txtSearch, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.cmbFilterSoPhong, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.cmbFilterLoaiPhong, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txtFilterTenKhach, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.dtpFilterNgayDen, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.cmbFilterSoPhong, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.cmbFilterLoaiPhong, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.dtpFilterNgayDen, 3, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(13, 12);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -453,9 +459,9 @@ namespace HTQLKS
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.White;
             this.txtSearch.Location = new System.Drawing.Point(4, 15);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(310, 26);
+            this.txtSearch.Size = new System.Drawing.Size(416, 26);
             this.txtSearch.TabIndex = 4;
             // 
             // cmbFilterSoPhong
@@ -466,10 +472,10 @@ namespace HTQLKS
             this.cmbFilterSoPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.cmbFilterSoPhong.ForeColor = System.Drawing.Color.White;
             this.cmbFilterSoPhong.FormattingEnabled = true;
-            this.cmbFilterSoPhong.Location = new System.Drawing.Point(830, 14);
-            this.cmbFilterSoPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbFilterSoPhong.Location = new System.Drawing.Point(682, 14);
+            this.cmbFilterSoPhong.Margin = new System.Windows.Forms.Padding(4);
             this.cmbFilterSoPhong.Name = "cmbFilterSoPhong";
-            this.cmbFilterSoPhong.Size = new System.Drawing.Size(182, 28);
+            this.cmbFilterSoPhong.Size = new System.Drawing.Size(246, 28);
             this.cmbFilterSoPhong.TabIndex = 3;
             // 
             // cmbFilterLoaiPhong
@@ -480,33 +486,20 @@ namespace HTQLKS
             this.cmbFilterLoaiPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.cmbFilterLoaiPhong.ForeColor = System.Drawing.Color.White;
             this.cmbFilterLoaiPhong.FormattingEnabled = true;
-            this.cmbFilterLoaiPhong.Location = new System.Drawing.Point(640, 14);
-            this.cmbFilterLoaiPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbFilterLoaiPhong.Location = new System.Drawing.Point(428, 14);
+            this.cmbFilterLoaiPhong.Margin = new System.Windows.Forms.Padding(4);
             this.cmbFilterLoaiPhong.Name = "cmbFilterLoaiPhong";
-            this.cmbFilterLoaiPhong.Size = new System.Drawing.Size(182, 28);
+            this.cmbFilterLoaiPhong.Size = new System.Drawing.Size(246, 28);
             this.cmbFilterLoaiPhong.TabIndex = 2;
-            // 
-            // txtFilterTenKhach
-            // 
-            this.txtFilterTenKhach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFilterTenKhach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.txtFilterTenKhach.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtFilterTenKhach.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtFilterTenKhach.ForeColor = System.Drawing.Color.White;
-            this.txtFilterTenKhach.Location = new System.Drawing.Point(322, 15);
-            this.txtFilterTenKhach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtFilterTenKhach.Name = "txtFilterTenKhach";
-            this.txtFilterTenKhach.Size = new System.Drawing.Size(310, 26);
-            this.txtFilterTenKhach.TabIndex = 1;
             // 
             // dtpFilterNgayDen
             // 
             this.dtpFilterNgayDen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpFilterNgayDen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.dtpFilterNgayDen.Location = new System.Drawing.Point(1020, 15);
-            this.dtpFilterNgayDen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFilterNgayDen.Location = new System.Drawing.Point(936, 15);
+            this.dtpFilterNgayDen.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFilterNgayDen.Name = "dtpFilterNgayDen";
-            this.dtpFilterNgayDen.Size = new System.Drawing.Size(248, 26);
+            this.dtpFilterNgayDen.Size = new System.Drawing.Size(332, 26);
             this.dtpFilterNgayDen.TabIndex = 0;
             // 
             // pnlHeader
@@ -516,7 +509,7 @@ namespace HTQLKS
             this.pnlHeader.Controls.Add(this.lblTitle);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(27, 25);
-            this.pnlHeader.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlHeader.Margin = new System.Windows.Forms.Padding(4);
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(1298, 62);
             this.pnlHeader.TabIndex = 0;
@@ -530,7 +523,7 @@ namespace HTQLKS
             this.btnAddNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddNew.ForeColor = System.Drawing.Color.White;
             this.btnAddNew.Location = new System.Drawing.Point(898, 0);
-            this.btnAddNew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddNew.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddNew.Name = "btnAddNew";
             this.btnAddNew.Size = new System.Drawing.Size(200, 62);
             this.btnAddNew.TabIndex = 1;
@@ -546,7 +539,7 @@ namespace HTQLKS
             this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExport.ForeColor = System.Drawing.Color.White;
             this.btnExport.Location = new System.Drawing.Point(1098, 0);
-            this.btnExport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(4);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(200, 62);
             this.btnExport.TabIndex = 2;
@@ -571,7 +564,7 @@ namespace HTQLKS
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlMain);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ucQuanLyCheckIn";
             this.Size = new System.Drawing.Size(1352, 897);
             this.pnlMain.ResumeLayout(false);
@@ -598,7 +591,6 @@ namespace HTQLKS
         private System.Windows.Forms.Button btnAddNew;
         private System.Windows.Forms.Panel pnlFilters;
         private System.Windows.Forms.DateTimePicker dtpFilterNgayDen;
-        private System.Windows.Forms.TextBox txtFilterTenKhach;
         private System.Windows.Forms.ComboBox cmbFilterLoaiPhong;
         private System.Windows.Forms.ComboBox cmbFilterSoPhong;
         private System.Windows.Forms.TextBox txtSearch;
@@ -609,6 +601,7 @@ namespace HTQLKS
         private System.Windows.Forms.Label lblMaDatPhong;
         private System.Windows.Forms.TextBox txtMaDatPhong;
         private System.Windows.Forms.Label lblTenKhach;
+        private System.Windows.Forms.TextBox txtTenKhach;
         private System.Windows.Forms.ComboBox cmbTenKhach;
         private System.Windows.Forms.Label lblCCCD;
         private System.Windows.Forms.TextBox txtCCCD;

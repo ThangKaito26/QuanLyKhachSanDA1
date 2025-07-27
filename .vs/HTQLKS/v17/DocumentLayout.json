@@ -3,7 +3,31 @@
   "WorkspaceRootPath": "D:\\QLKSNet\\HTQLKS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|d:\\qlksnet\\htqlks\\htqlks\\uclaphoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|d:\\qlksnet\\htqlks\\htqlks\\ucquanlycheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|solutionrelative:htqlks\\ucquanlycheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|d:\\qlksnet\\htqlks\\htqlks\\uclaphoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|solutionrelative:htqlks\\uclaphoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|D:\\QLKSNet\\HTQLKS\\htqlks\\ucquanlycheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|solutionrelative:htqlks\\ucquanlycheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|d:\\qlksnet\\htqlks\\htqlks\\ucquanlycheckout.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|solutionrelative:htqlks\\ucquanlycheckout.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|d:\\qlksnet\\htqlks\\htqlks\\ucquanlycheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|solutionrelative:htqlks\\ucquanlycheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|D:\\QLKSNet\\HTQLKS\\htqlks\\qlksdataset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|solutionrelative:htqlks\\qlksdataset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|D:\\QLKSNet\\HTQLKS\\htqlks\\uclaphoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|solutionrelative:htqlks\\uclaphoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -21,14 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|D:\\QLKSNet\\HTQLKS\\htqlks\\ucquanlyphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|solutionrelative:htqlks\\ucquanlyphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|D:\\QLKSNet\\HTQLKS\\htqlks\\ucquanlycheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|solutionrelative:htqlks\\ucquanlycheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|D:\\QLKSNet\\HTQLKS\\htqlks\\ucquanlycheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|solutionrelative:htqlks\\ucquanlycheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8C6BA66-2C9C-4CDA-9F29-BD59F26E73FF}|HTQLKS\\HTQLKS.csproj|D:\\QLKSNet\\HTQLKS\\htqlks\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,19 +66,124 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ucLapHoaDon.cs [Design]",
+              "DocumentMoniker": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucLapHoaDon.cs",
+              "RelativeDocumentMoniker": "HTQLKS\\ucLapHoaDon.cs",
+              "ToolTip": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucLapHoaDon.cs [Design]",
+              "RelativeToolTip": "HTQLKS\\ucLapHoaDon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T13:01:28.462Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ucQuanLyCheckOut.Designer.cs",
+              "DocumentMoniker": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyCheckOut.Designer.cs",
+              "RelativeDocumentMoniker": "HTQLKS\\ucQuanLyCheckOut.Designer.cs",
+              "ToolTip": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyCheckOut.Designer.cs",
+              "RelativeToolTip": "HTQLKS\\ucQuanLyCheckOut.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T13:01:23.608Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ucQuanLyCheckOut.cs [Design]",
+              "DocumentMoniker": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyCheckOut.cs",
+              "RelativeDocumentMoniker": "HTQLKS\\ucQuanLyCheckOut.cs",
+              "ToolTip": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyCheckOut.cs [Design]",
+              "RelativeToolTip": "HTQLKS\\ucQuanLyCheckOut.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T13:01:01.602Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ucQuanLyCheckIn.Designer.cs",
+              "DocumentMoniker": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyCheckIn.Designer.cs",
+              "RelativeDocumentMoniker": "HTQLKS\\ucQuanLyCheckIn.Designer.cs",
+              "ToolTip": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyCheckIn.Designer.cs",
+              "RelativeToolTip": "HTQLKS\\ucQuanLyCheckIn.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T15:46:14.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ucQuanLyCheckIn.cs",
+              "DocumentMoniker": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyCheckIn.cs",
+              "RelativeDocumentMoniker": "HTQLKS\\ucQuanLyCheckIn.cs",
+              "ToolTip": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyCheckIn.cs",
+              "RelativeToolTip": "HTQLKS\\ucQuanLyCheckIn.cs",
+              "ViewState": "AgIAACMCAAAAAAAAAAAgwCUCAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T08:35:47.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ucQuanLyPhong.cs [Design]",
+              "DocumentMoniker": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyPhong.cs",
+              "RelativeDocumentMoniker": "HTQLKS\\ucQuanLyPhong.cs",
+              "ToolTip": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyPhong.cs [Design]",
+              "RelativeToolTip": "HTQLKS\\ucQuanLyPhong.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T08:36:06.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\Form1.cs",
+              "RelativeDocumentMoniker": "HTQLKS\\Form1.cs",
+              "ToolTip": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\Form1.cs [Design]",
+              "RelativeToolTip": "HTQLKS\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T09:04:29.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ucQuanLyCheckIn.cs [Design]",
+              "DocumentMoniker": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyCheckIn.cs",
+              "RelativeDocumentMoniker": "HTQLKS\\ucQuanLyCheckIn.cs",
+              "ToolTip": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyCheckIn.cs [Design]",
+              "RelativeToolTip": "HTQLKS\\ucQuanLyCheckIn.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T08:36:02.57Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ucQuanLyPhong.Designer.cs",
+              "DocumentMoniker": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyPhong.Designer.cs",
+              "RelativeDocumentMoniker": "HTQLKS\\ucQuanLyPhong.Designer.cs",
+              "ToolTip": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyPhong.Designer.cs",
+              "RelativeToolTip": "HTQLKS\\ucQuanLyPhong.Designer.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAnwFkAAADRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T10:13:49.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ucLapHoaDon.cs",
               "DocumentMoniker": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucLapHoaDon.cs",
               "RelativeDocumentMoniker": "HTQLKS\\ucLapHoaDon.cs",
@@ -75,76 +196,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ucQuanLyPhong.Designer.cs",
-              "DocumentMoniker": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyPhong.Designer.cs",
-              "RelativeDocumentMoniker": "HTQLKS\\ucQuanLyPhong.Designer.cs",
-              "ToolTip": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyPhong.Designer.cs",
-              "RelativeToolTip": "HTQLKS\\ucQuanLyPhong.Designer.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAnwFkAAADRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T10:13:49.621Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ucQuanLyCheckIn.Designer.cs",
-              "DocumentMoniker": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyCheckIn.Designer.cs",
-              "RelativeDocumentMoniker": "HTQLKS\\ucQuanLyCheckIn.Designer.cs",
-              "ToolTip": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyCheckIn.Designer.cs",
-              "RelativeToolTip": "HTQLKS\\ucQuanLyCheckIn.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T15:46:14.399Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ucQuanLyCheckIn.cs",
-              "DocumentMoniker": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyCheckIn.cs",
-              "RelativeDocumentMoniker": "HTQLKS\\ucQuanLyCheckIn.cs",
-              "ToolTip": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyCheckIn.cs",
-              "RelativeToolTip": "HTQLKS\\ucQuanLyCheckIn.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAIAwwGgAAABDAAAAAAAAAA==",
+              "Title": "QLKSDataSet.Designer.cs",
+              "DocumentMoniker": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\QLKSDataSet.Designer.cs",
+              "RelativeDocumentMoniker": "HTQLKS\\QLKSDataSet.Designer.cs",
+              "ToolTip": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\QLKSDataSet.Designer.cs",
+              "RelativeToolTip": "HTQLKS\\QLKSDataSet.Designer.cs",
+              "ViewState": "AgIAAFQSAAAAAAAAAAAkwGsSAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T08:35:47.98Z"
+              "WhenOpened": "2025-07-25T06:56:28.075Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ucQuanLyPhong.cs [Design]",
-              "DocumentMoniker": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyPhong.cs",
-              "RelativeDocumentMoniker": "HTQLKS\\ucQuanLyPhong.cs",
-              "ToolTip": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyPhong.cs [Design]",
-              "RelativeToolTip": "HTQLKS\\ucQuanLyPhong.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T08:36:06.493Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\Form1.cs",
-              "RelativeDocumentMoniker": "HTQLKS\\Form1.cs",
-              "ToolTip": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\Form1.cs [Design]",
-              "RelativeToolTip": "HTQLKS\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T09:04:29.247Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ucQuanLyCheckIn.cs [Design]",
-              "DocumentMoniker": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyCheckIn.cs",
-              "RelativeDocumentMoniker": "HTQLKS\\ucQuanLyCheckIn.cs",
-              "ToolTip": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\ucQuanLyCheckIn.cs [Design]",
-              "RelativeToolTip": "HTQLKS\\ucQuanLyCheckIn.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T08:36:02.57Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\Form1.cs",
               "RelativeDocumentMoniker": "HTQLKS\\Form1.cs",
@@ -156,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "FormRoomDetails.cs [Design]",
               "DocumentMoniker": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\FormRoomDetails.cs",
               "RelativeDocumentMoniker": "HTQLKS\\FormRoomDetails.cs",
@@ -167,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "QLKSDataSet.xsd",
               "DocumentMoniker": "D:\\QLKSNet\\HTQLKS\\HTQLKS\\QLKSDataSet.xsd",
               "RelativeDocumentMoniker": "HTQLKS\\QLKSDataSet.xsd",
